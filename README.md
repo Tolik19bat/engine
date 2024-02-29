@@ -1,1 +1,2 @@
-# engine
+# engine [![Build status](https://ci.appveyor.com/api/projects/status/detlwrjnkuv23edw?svg=true)](https://ci.appveyor.com/project/Tolik19bat/engine)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen)](https://tolik19bat.github.io/engine/)
