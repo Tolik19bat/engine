@@ -1,0 +1,196 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+
+
+.list {
+  width: 855px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  
+}
+
+.list-btn-add {
+  align-self: flex-end;
+  width: 196px;
+  height: 48px;
+}
+
+.list-btn {
+  font-size: inherit;
+  margin-bottom: 25px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #000;
+}
+
+.status-container {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.list-item-status-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #000;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.list-item-status {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+
+.list-item-status-label:has(.list-item-status:checked) {
+  background-image: url('../img/Mark.png');
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.list-item-name, .list-item-description {
+  font-size: 18px;
+  width: 500px;
+  vertical-align: middle;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.list-item-description, .data-entry-description {
+  word-wrap: break-word;
+
+}
+
+.list-item-created {
+  font-size: 18px;
+  width: 160px;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.list-item-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 16px;
+  cursor: pointer;
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.list-item-btn-edit {
+  background-image: url('../svg/pencil.svg');
+}
+
+.list-item-btn-remove {
+  background-image: url('../svg/form-x.svg');
+}
+
+.data-entry {
+  position: absolute;
+  top: 67px;
+  left: 187px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 16px;
+  width: 512px;
+  padding: 20px;
+}
+
+.data-entry-title, .confirm-title {
+  font-size: inherit;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+
+.label {
+  padding: 15px 0;
+}
+
+.input {
+  height: 38px;
+  border: 1px solid #000;
+}
+.data-entry-buttons {
+  margin-top: 17px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.data-entry-btn, .confirm-btn {
+  font-size: inherit;
+  height: 50px;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 0 23px;
+  cursor: pointer;
+}
+
+.confirm {
+  position: absolute;
+  top: 67px;
+  left: 194px;
+  width: 512px;
+  padding: 22px;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.confirm-text {
+  margin-top: 28px;
+}
+
+.confirm-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.hidden {
+  display: none;
+}

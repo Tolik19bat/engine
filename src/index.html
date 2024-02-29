@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="list">
+    <button class="list-btn list-btn-add">Добавить тикет</button>
+    <div class="list-items">
+    </div>
+  </div>
+
+  <form class="data-entry hidden" name="dataEntry">
+    <h3 class="data-entry-title">Изменить тикет</h3>
+    <label for="name" class="label name-label">Краткое описание</label>
+    <input type="text" id="name" name="name" class="input data-entry-name" required>
+    <label for="description" class="label description-label">Подробное описание</label>
+    <input type="text" id="description" name="description" class="input data-entry-description">
+    </div>
+    <div class="data-entry-buttons">
+      <button type="button" class="data-entry-btn data-entry-btn-cancel">Отмена</button>
+      <button type="submit" class="data-entry-btn data-entry-btn-submit">Сохранить</button>
+    </div>
+  </form>
+
+  <div class="confirm hidden">
+    <h3 class="confirm-title">Удалить тикет</h3>
+    <div class="confirm-text">Вы уверены, что хотите удалить тикет? Это действие не обратимо.</div>
+    <div class="confirm-buttons">
+      <button type="button" class="confirm-btn confirm-btn-cancel">Отмена</button>
+      <button type="button" class="confirm-btn confirm-btn-ok">Ок</button>
+    </div>
+  </div>
+</body>
+
+</html>
